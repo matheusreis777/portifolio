@@ -41,6 +41,27 @@ h2 {
 #about {
   text-align: center;
 }
+#services{
+  text-align: center;
+}
+
+h4.t-h4{
+  font-weight: bold;
+  color: #1e2739;
+}
+
+.card{
+  border: 0px solid #1e2739;
+  padding: 20px;
+  margin-left: 0px;
+  height: 320px;
+  align-items: center;
+}
+
+.card:hover{
+  cursor: pointer;
+  background-color: #a2b2d1;
+}
 
 .jumbotron {
   background-image: url('./image/adv-2.jpg');
