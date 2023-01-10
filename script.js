@@ -54,9 +54,23 @@ window.onload = function() {
       // these IDs from the previous steps
       emailjs.sendForm('service_h0i6cmb', 'template_cmwz5wj', this)
           .then(function() {
-              console.log('SUCCESS!');
+              alert("E-mail enviado com sucesso!");
+              document.getElementById("btn-enviar").disabled = true;
           }, function(error) {
               console.log('FAILED...', error);
           });
   });
+}
+
+const handlePhone = (event) => {
+  let input = event.target
+  input.value = phoneMask(input.value)
+}
+
+const phoneMask = (value) => {
+  if (!value) return ""
+  value = value.replace(/\D/g,'')
+  value = value.replace(/(\d{2})(\d)/,"($1) $2")
+  value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+  return value
 }

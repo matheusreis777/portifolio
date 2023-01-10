@@ -192,6 +192,22 @@ footer .glyphicon {
   -webkit-animation-duration: 1s;
   visibility: visible;
 }
+
+input, textarea {
+  display: block;
+  height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+  height: 30px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
 @keyframes slide {
   0% {
     opacity: 0;

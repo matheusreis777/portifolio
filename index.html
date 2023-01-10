@@ -130,7 +130,7 @@
     <div id="contact" class="container-fluid bg-grey">
       <h2 class="text-center">contato</h2>
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-8">
           <p>Entre em contato conosco e retornaremos em até 24 horas.</p>
           <p>
             <span class="glyphicon glyphicon-map-marker"></span> Chicago, US
@@ -143,21 +143,19 @@
           <i class="gg-instagram"><label style="margin-left: 25px; cursor: pointer; font-style: normal;"></label></i>
           
         </div>
-        <div class="col-sm-7 slideanim">
-          <div class="row">
+        <div class="col-sm-4 slideanim">
             <form id="contact-form">
-              <input type="hidden" name="contact_number">
-              <label>Name</label>
+              <label>Nome</label>
               <input type="text" name="user_name">
-              <label>Email</label>
+              <label>Telefone</label>
+              <input type="tel" maxlength="15" onkeyup="handlePhone(event)" name="contact_number">              
+              <label>E-mail</label>
               <input type="email" name="user_email">
-              <label>Message</label>
+              <label>Menssagem</label>
               <textarea name="message"></textarea>
-              <input type="submit" value="Send">
+              <br>
+              <button id="" class="btn btn-warning btn-block" type="submit" value="Enviar">Enviar</button> 
           </form>
-          </div>
-          
-          <br />
         </div>
       </div>
     </div>
